@@ -1,0 +1,141 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  font-size: 62.5%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.hero-img-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  overflow: hidden;
+}
+
+.hero-img-container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 3rem;
+
+}
+
+.content-container__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero-heading {
+  font-size: 72px;
+}
+
+.hero-copy {
+  width: 36rem;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #808080;
+}
+
+.form-heading {
+  font-size: 24px;
+  align-self: flex-start;
+  margin: 1.5rem 0;
+}
+
+.content-container__form {
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form__name-group {
+  display: flex;
+}
+
+.form__name-group-first {
+  width: 50%;
+}
+
+.form__name-group-first > input {
+  width: 95%;
+}
+
+.form__name-group-last {
+  width: 50%;
+}
+
+.form__name-group-last > input {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding-left: 3px;
+}
+
+
+input::placeholder {
+  color: rgb(164,114,82, 0.9);
+}
+
+input:focus {
+  color: #000;
+}
+
+
+
+.btn-submit {
+  font-family: 'Open Sans', sans-serif;
+  align-self: flex-start;
+  width: 5rem;
+  height: 2.5rem;
+  color: #FFF;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: translateY(-1px);
+}
