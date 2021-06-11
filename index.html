@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>JS Challenge</title>
-</head>
-<body class="container">
-  <!-- Image -->
-  <figure class="hero-img-container">
-    <img class="hero-img-container__img" src="img/books.jpg" alt="Woman browsing a library bookshelf">
-  </figure>
-  <!-- Content -->
-  <main class="content-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JS Challenge</title>
+  </head>
+  <body class="container">
 
-    <!-- Hero Text -->
-    <div class="content-container__hero">
-      <h1 class="hero-heading">It's going down for real.</h1>
+    <!-- Hero Image -->
+    <figure class="hero-img-container">
+      <img
+        class="hero-img-container__img"
+        src="img/books.jpg"
+        alt="Woman browsing a library bookshelf"
+      />
+    </figure>
 
-      <p class="hero-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptate iusto! Reprehenderit commodi adipisci, libero, excepturi, laudantium molestiae quia facere accusantium mollitia minus sint dolorem! Cum, vel? Amet, quisquam eum.</p>
-    </div>
+    <!-- Content -->
+    <main class="content-container">
+      <!-- Hero Text-->
+      <div class="content-container__hero">
+        <h1 class="hero-heading">It's going down for real.</h1>
+        <p class="hero-copy">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+          voluptate iusto! Reprehenderit commodi adipisci, libero, excepturi,
+          laudantium molestiae quia facere accusantium mollitia minus sint
+          dolorem! Cum, vel? Amet, quisquam eum.
+        </p>
+      </div>
 
-    <!-- Form -->
-    <div class="content-container__form">
-      <h2 class="form-heading">About you</h2>
+      <!-- Form -->
+      <div class="content-container__form">
+        <h2 class="form-heading">About you</h2>
 
-      <form class="form">
-        <!-- Name -->
-        <div class="form__name-group">
-          <!-- First name -->
-          <div class="form__name-group-first">
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" placeholder="Jane">
+        <form class="form">
+          <!-- Name -->
+          <div class="form__name-group">
+            <!-- First name -->
+            <div class="form__name-group-first">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Jane"
+              />
+            </div>
+            <!-- Last name -->
+            <div class="form__name-group-last">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Doe"
+                required
+              />
+            </div>
           </div>
-          <!-- Last name -->
-          <div class="form__name-group-last">
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
-          </div>
-        </div>
 
-        <!-- Book choice -->
-        <label for="book-choice">Type of Book Choice</label>
-        <select name="book-choice" id="book-choice">
-          <option value="hardcover" default>Hardcover</option>
-          <option value="softcover">Softcover</option>
-        </select>
+          <!-- Book choice -->
+          <label for="book-choice">Type of Book Choice</label>
+          <select name="book-choice" id="book-choice">
+            <option value="hardcover" default>Hardcover</option>
+            <option value="softcover">Softcover</option>
+          </select>
 
-        <!-- Tel -->
-        <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
-        <label for="phone-number">Phone Number</label>
-        <input type="tel" name="phone-number" id="phone-number" placeholder="555-555-5555" minlength="10" maxlength="10">
+          <!-- Tel -->
+          <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+          <label for="phone-number">Phone Number</label>
+          <input
+            type="tel"
+            name="phone-number"
+            id="phone-number"
+            placeholder="555-555-5555"
+            minlength="10"
+            maxlength="10"
+          />
 
-        <!-- Submit -->
-        <button class="btn-submit" type="submit">Send</button>
-      </form>
-    </div>
-
-  </main>
-
-</body>
+          <!-- Submit -->
+          <button class="btn-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
